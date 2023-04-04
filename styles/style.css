@@ -396,8 +396,9 @@ p {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1rem;
+  background: blueviolet;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -889,8 +890,9 @@ a.sub-navigation-link:hover {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1rem;
+    background: yellow;
   }
 
 
@@ -1014,7 +1016,8 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1200px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    background: pink;
 
   }
 }
@@ -1023,7 +1026,19 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 1400px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    background: red;
+
+  } 
+
+}
+
+/* XXX-Large devices (large desktops, 1500px and up)*/
+
+@media (min-width: 1500px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    background: greenyellow;
 
   }
 }
