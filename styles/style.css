@@ -77,7 +77,7 @@ html {
   --body-typeface: "acumin-variable", sans-serif;
   --heading-typeface: "p22-mackinac-pro", serif;
   --project-title-typeface: "p22-mackinac-pro", serif;
-  --project-title-color: #723850;
+  --project-title-color: #cf8652;
   --heart-color: darkred;
   --off-white: #f8f8ff;
   --isabelline: #f4f0ec;
@@ -85,7 +85,7 @@ html {
   --alice-blue: #f0f8ff;
   --alabaster: #f2f0e6;
   --floral-white: #fffaf0;
-  --background-color: #fdf0d5;
+  --background-color: ##f1f1f1;
   --alt-background-color: black;
   --text-selection-background-color: #555;
 }
@@ -135,12 +135,27 @@ h1 {
   margin-bottom: 1rem;
   color: #669bbc;
   font-style: normal;
+  font-weight: 800;
 }
 
 .hero-headline {
-  color: #669bbc;
+  color: #cf8652;
+  font-size: 1rem;
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 400;
+  letter-spacing: 0.063rem;
 }
-
+.hero-headline2{
+  color:#cf8652;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.063rem;
+  font-family: "p22-mackinac-pro", serif;
+}
+.hero-headline3{
+  color:#cf8652;
+  font-size: 1.125rem;
+}
 .project-title {
   font-size: 3rem;
   font-family: var(--project-title-typeface);
@@ -154,11 +169,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-family: "acumin-variable", sans-serif;
   font-style: oblique;
   margin-bottom: 1rem;
-  color: #013148;
+  color: #17404e;
 }
 
 h3 {
@@ -222,6 +237,7 @@ a:active {
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center center;
+  
 }
 
 p {
@@ -290,10 +306,14 @@ p {
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
+  background-color: #d3ab52;
+  font-family: "p22-mackinac-pro", serif;
+  
 }
 
 .logo {
   width: 3rem;
+  
 }
 
 .hero-headline-wrapper {
@@ -315,7 +335,7 @@ p {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color: white;
+  color: #d3ab52;
 }
 
 .hero-footer-navigation {
@@ -453,8 +473,14 @@ p {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 100vh;
-  background: #f5f5f5;
+  background: #d3ab52;
   padding: 1rem;
+
+}
+
+.h2,
+p {
+  color: white
 }
 
 .footer-item-1 {
@@ -575,7 +601,7 @@ p {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  background: #dfdad0;
+  background: #f1f1f1;
 
 }
 
@@ -588,8 +614,22 @@ p {
 }
 
 .holding-page-title {
+  font-size: 3rem;
+  color: #d3ab52;
+  letter-spacing: 0.1em;
+  letter-spacing: 2px;
+}
+
+.holding-page-quote {
   font-size: 2rem;
-  color: #cf8652;
+  color: #17404e;
+  letter-spacing: 0.1em;
+  letter-spacing: 2px;
+}
+
+.holding-page-subheading {
+  font-size: 2rem;
+  color: #17404e;
   letter-spacing: 0.1em;
   letter-spacing: 2px;
 }
@@ -926,7 +966,7 @@ a.sub-navigation-link:hover {
 @media (min-width: 1200px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    
+
   }
 }
 
@@ -935,6 +975,6 @@ a.sub-navigation-link:hover {
 @media (min-width: 1400px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-    
+
   }
 }
