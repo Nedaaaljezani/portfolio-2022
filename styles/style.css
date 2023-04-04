@@ -70,8 +70,8 @@ html {
   --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
   --accent-color: #fdf0d5F;
-  --overlay-color: #fdf0d5;
-  --hyperlink-color: #444;
+  --overlay-color: #cf8652;
+  --hyperlink-color: #17404e;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
   --body-typeface: "acumin-variable", sans-serif;
@@ -145,19 +145,23 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.063rem;
 }
-.hero-headline2{
-  color:#cf8652;
+
+.hero-headline2 {
+  color: #cf8652;
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: -0.063rem;
   font-family: "p22-mackinac-pro", serif;
 }
-.hero-headline3{
-  color:#cf8652;
+
+.hero-headline3 {
+  margin-top: 1rem;
+  color: #cf8652;
   font-size: 1.125rem;
 }
+
 .project-title {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
@@ -237,7 +241,7 @@ a:active {
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center center;
-  
+
 }
 
 p {
@@ -308,12 +312,12 @@ p {
   align-items: center;
   background-color: #d3ab52;
   font-family: "p22-mackinac-pro", serif;
-  
+
 }
 
 .logo {
   width: 3rem;
-  
+
 }
 
 .hero-headline-wrapper {
@@ -406,7 +410,7 @@ p {
   align-items: center;
   flex-direction: column;
   padding: 1em;
-  background-color: gray;
+  background-color: #cf8652;
   transition: opacity .3s, visibility .3s;
 }
 
@@ -478,9 +482,18 @@ p {
 
 }
 
-.h2,
-p {
-  color: white
+
+.footer-heading{
+  color: #17404e;
+font-family: "p22-mackinac-pro", serif;
+font-weight: 600;
+font-size: 1.5rem;}
+.footer-body{
+color: #f1f1f1;
+font-family: "acumin-variable", sans-serif;
+font-weight: 400;
+font-size: 1rem;
+
 }
 
 .footer-item-1 {
@@ -803,7 +816,29 @@ a.sub-navigation-link:hover {
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .hero-headline {
+    color: #cf8652;
+    font-size: 1.5rem;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    letter-spacing: 0.063rem;
+  }
+
+  .hero-headline2 {
+    color: #cf8652;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: -0.063rem;
+    font-family: "p22-mackinac-pro", serif;
+    margin-bottom: 1rem;
+  }
+
+  .hero-headline3 {
+    color: #cf8652;
+    font-size: 2rem;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 
@@ -840,7 +875,7 @@ a.sub-navigation-link:hover {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
   }
 
