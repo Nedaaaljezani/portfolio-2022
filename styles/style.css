@@ -1035,6 +1035,15 @@ a.sub-navigation-link:hover {
 
 /* XXX-Large devices (large desktops, 1500px and up)*/
 
+@media (min-width: 1450px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    background: rgb(255, 47, 95);
+
+  }
+}
+/* XXX-Large devices (large desktops, 1500px and up)*/
+
 @media (min-width: 1500px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
