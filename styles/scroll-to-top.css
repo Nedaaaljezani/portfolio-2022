@@ -4,7 +4,7 @@
     bottom: 0;
     width: 8rem;
     height: 2rem;
-    background: #f1f1f1;
+    background: var(--project-title-color);
     display: flex;
     align-items: center;
     justify-content: center;

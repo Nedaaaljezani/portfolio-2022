@@ -72,7 +72,7 @@ html {
   --accent-color: #fdf0d5F;
   --overlay-color: #cf8652;
   --hyperlink-color: #17404e;
-  --hyperlink-alternate-color: orangered;
+  --hyperlink-alternate-color: #f1f1f1;
   --hover-color: #111;
   --body-typeface: "acumin-variable", sans-serif;
   --heading-typeface: "p22-mackinac-pro", serif;
@@ -85,7 +85,7 @@ html {
   --alice-blue: #f0f8ff;
   --alabaster: #f2f0e6;
   --floral-white: #fffaf0;
-  --background-color: ##f1f1f1;
+  --background-color: #f1f1f1;
   --alt-background-color: black;
   --text-selection-background-color: #555;
 }
@@ -246,9 +246,10 @@ a:active {
   -webkit-text-stroke-color: var(--accent-color);
 }
 
-.colored-link {
+a.colored-link, a.alternate-hyperlink {
   color: var(--hyperlink-alternate-color);
 }
+
 
 .custom-navigation:hover {
   background: url(assets/temp/heading-background.svg);
@@ -491,7 +492,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 100vh;
+  min-height: 50vh;
   background: #d3ab52;
   padding: 1rem;
 
@@ -519,6 +520,7 @@ font-size: 1rem;
 .footer-item-2 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  background:#c1121f;
 }
 
 .footer-item-3 {
@@ -581,8 +583,6 @@ font-size: 1rem;
 
 .project-image {
   width: 100%;
-  font-size: 12rem;
-  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -977,10 +977,10 @@ a.sub-navigation-link:hover {
   /* Sidebar on Large Devices */
   .project-aside {
     width: 35%;
-    height: 65vh;
+    /* height: 65vh;
     position: -webkit-sticky;
     position: sticky;
-    top: 5vh;
+    top: 5vh; */
     padding-right: 2rem;
   }
 
@@ -990,7 +990,7 @@ a.sub-navigation-link:hover {
   }
 
   .project-image {
-    min-height: 100vh;
+
   }
 
   .project-image-container {
