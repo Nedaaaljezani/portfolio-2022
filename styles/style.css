@@ -73,6 +73,7 @@ html {
   --overlay-color: #cf8652;
   --hyperlink-color: #17404e;
   --hyperlink-alternate-color: #f1f1f1;
+  --hyperlink-alternate-color-blog: #cf8652
   --hover-color: #111;
   --body-typeface: "acumin-variable", sans-serif;
   --heading-typeface: "p22-mackinac-pro", serif;
@@ -214,6 +215,28 @@ h4 {
   color: var(--baby-powder);
 }
 
+.blog-quote{
+  text-align: center;
+  font-family:"p22-mackinac-pro", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #cf8652;
+}
+.cite{
+  text-align: left;
+  font-family:"p22-mackinac-pro", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #cf8652;
+  font-style: italic;
+}
+.blog-images{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  width: 50%;
+}
 /* Hyperlink Styles */
 
 a:link {
