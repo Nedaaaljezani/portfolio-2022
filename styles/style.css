@@ -139,25 +139,24 @@ h1 {
 }
 
 .hero-headline {
-  color: #cf8652;
-  font-size: 1rem;
+  color: #17404e;
+  font-size: 1.25rem;
   font-family: "p22-mackinac-pro", serif;
   font-weight: 400;
   letter-spacing: 0.063rem;
 }
 
 .hero-headline2 {
-  color: #cf8652;
-  font-size: 2.5rem;
+  color: #17404e;
+  font-size: 5rem;
   font-weight: 400;
   letter-spacing: -0.063rem;
   font-family: "p22-mackinac-pro", serif;
 }
 
 .hero-headline3 {
-  margin-top: 1rem;
-  color: #cf8652;
-  font-size: 1.125rem;
+  color: #17404e;
+  font-size: 1.1rem;
 }
 
 .project-title {
@@ -167,23 +166,33 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.subheading{
+.subheading {
   font-family: "p22-mackinac-pro", serif;
-  font-size: 1.5rem;
-  color:#cf8652;
+  font-size: 1.8rem;
+  color: #cf8652;
   font-style: normal;
   font-weight: 600;
 }
-.subheading-2{font-family: "p22-mackinac-pro", serif;
+
+.subheading-2 {
+  font-family: "p22-mackinac-pro", serif;
   font-size: 1.25rem;
-  color:#cf8652;
+  color: #cf8652;
   font-style: oblique;
   font-weight: 400;
 
 }
+
 .overlay-title {
-  font-size: 2rem;
-  color: #c1121f
+  font-size: 1.5rem;
+  color: #17404e;
+  font-family: "p22-mackinac-pro", serif;
+  text-align: center;
+}
+
+.overlay-description {
+  font-size: 1rem;
+
 }
 
 h2 {
@@ -246,7 +255,8 @@ a:active {
   -webkit-text-stroke-color: var(--accent-color);
 }
 
-a.colored-link, a.alternate-hyperlink {
+a.colored-link,
+a.alternate-hyperlink {
   color: var(--hyperlink-alternate-color);
 }
 
@@ -275,6 +285,7 @@ p {
 
 .footer-nav-item {
   line-height: 1.3;
+  font-family: "acumin-variable", sans-serif;
 }
 
 .award-item {
@@ -289,13 +300,10 @@ p {
   line-height: 1.3;
   list-style-type: disc;
   margin-left: 1.2rem;
+
 }
 
-.project-body {
-  font-size: 1.25rem;
-  line-height: 1.3;
-  margin-bottom: 1rem;
-}
+
 
 
 
@@ -402,7 +410,19 @@ p {
   background: blueviolet;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
-
+.project-body {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-align:justify;
+}
+.subheading {
+  font-family: "p22-mackinac-pro", serif;
+  font-size: 1.8rem;
+  color: #cf8652;
+  font-style: normal;
+  font-weight: 600;
+}
 .work-page-grid-item {
   width: 100%;
   height: auto;
@@ -499,16 +519,22 @@ p {
 }
 
 
-.footer-heading{
+.footer-heading {
   color: #17404e;
-font-family: "p22-mackinac-pro", serif;
-font-weight: 600;
-font-size: 1.5rem;}
-.footer-body{
-color: #f1f1f1;
-font-family: "acumin-variable", sans-serif;
-font-weight: 400;
-font-size: 1rem;
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: .7rem;
+  margin-bottom: .3rem;
+  font-style: italic;
+}
+
+.footer-body {
+  color: #f1f1f1;
+  font-family: "acumin-variable", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+
 
 }
 
@@ -520,7 +546,6 @@ font-size: 1rem;
 .footer-item-2 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  background:#c1121f;
 }
 
 .footer-item-3 {
@@ -536,7 +561,12 @@ font-size: 1rem;
 .awards-list {
   margin-bottom: 2rem;
 }
-
+.project-body {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-align:justify;
+}
 
 /* Project Page 
 
@@ -833,7 +863,7 @@ a.sub-navigation-link:hover {
 
 @media (min-width: 768px) {
   .hero-headline {
-    color: #cf8652;
+    color: #17404e;
     font-size: 1.5rem;
     font-family: "p22-mackinac-pro", serif;
     font-weight: 400;
@@ -841,17 +871,33 @@ a.sub-navigation-link:hover {
   }
 
   .hero-headline2 {
-    color: #cf8652;
-    font-size: 4rem;
+    color: #17404e;
+    font-size: 6rem;
     font-weight: 400;
     letter-spacing: -0.063rem;
     font-family: "p22-mackinac-pro", serif;
-    margin-bottom: 1rem;
+
   }
 
   .hero-headline3 {
-    color: #cf8652;
+    color: #17404e;
+    font-size: 1.4rem;
+  }
+  .project-title{
+    font-size: 2.5rem;
+  }
+  .project-body {
     font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align:justify;
+  }
+  .subheading {
+    font-family: "p22-mackinac-pro", serif;
+    font-size: 2rem;
+    color: #cf8652;
+    font-style: normal;
+    font-weight: 600;
   }
 }
 
@@ -895,6 +941,55 @@ a.sub-navigation-link:hover {
     background: yellow;
   }
 
+  .overlay-title {
+    font-size: 1.8rem;
+    color: #17404e;
+    font-family: "p22-mackinac-pro", serif;
+    text-align: center;
+  }
+
+  .overlay-description {
+    font-size: 1rem;
+  }
+
+  .project-body {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  .project-title{
+    font-size: 1.5rem;
+  }
+ 
+  .subheading {
+    font-family: "p22-mackinac-pro", serif;
+    font-size: 1.2rem;
+    color: #cf8652;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .hero-headline {
+    color: #17404e;
+    font-size: 1.5rem;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    letter-spacing: 0.063rem;
+  }
+
+  .hero-headline2 {
+    color: #17404e;
+    font-size: 7rem;
+    font-weight: 400;
+    letter-spacing: -0.063rem;
+    font-family: "p22-mackinac-pro", serif;
+
+  }
+
+  .hero-headline3 {
+    color: #17404e;
+    font-size: 1.6rem;
+  }
 
 
 
@@ -989,9 +1084,7 @@ a.sub-navigation-link:hover {
     width: 65%;
   }
 
-  .project-image {
-
-  }
+  .project-image {}
 
   .project-image-container {
     flex-direction: row;
@@ -1020,6 +1113,57 @@ a.sub-navigation-link:hover {
     background: pink;
 
   }
+
+  .overlay-title {
+    font-size: 2rem;
+    color: #17404e;
+    font-family: "p22-mackinac-pro", serif;
+    text-align: center;
+  }
+
+  .overlay-description {
+    font-size: 1.5rem;
+
+  }
+
+  .hero-headline {
+    color: #17404e;
+    font-size: 1.5rem;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    letter-spacing: 0.063rem;
+  }
+
+  .hero-headline2 {
+    color: #17404e;
+    font-size: 9rem;
+    font-weight: 400;
+    letter-spacing: -0.063rem;
+    font-family: "p22-mackinac-pro", serif;
+
+  }
+
+  .hero-headline3 {
+    color: #17404e;
+    font-size: 2rem;
+  }
+  .project-body {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    text-align:justify;
+  }
+  .project-title{
+    font-size: 2rem;
+  }
+ 
+  .subheading {
+    font-family: "p22-mackinac-pro", serif;
+    font-size: 1.8rem;
+    color: #cf8652;
+    font-style: normal;
+    font-weight: 600;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -1029,7 +1173,47 @@ a.sub-navigation-link:hover {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     background: red;
 
-  } 
+  }
+
+  .hero-headline {
+    color: #17404e;
+    font-size: 1.5rem;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    letter-spacing: 0.063rem;
+  }
+
+  .hero-headline2 {
+    color: #17404e;
+    font-size: 10rem;
+    font-weight: 400;
+    letter-spacing: -0.063rem;
+    font-family: "p22-mackinac-pro", serif;
+
+  }
+
+  .hero-headline3 {
+    color: #17404e;
+    font-size: 2.3rem;
+  }
+  .project-body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .project-title{
+    font-size: 2rem;
+  }
+ 
+  .subheading {
+    font-family: "p22-mackinac-pro", serif;
+    font-size: 1.8rem;
+    color: #cf8652;
+    font-style: normal;
+    font-weight: 600;
+  }
+
 
 }
 
@@ -1041,5 +1225,44 @@ a.sub-navigation-link:hover {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     background: greenyellow;
 
+  }
+
+  .hero-headline {
+    color: #17404e;
+    font-size: 1.5rem;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    letter-spacing: 0.063rem;
+  }
+
+  .hero-headline2 {
+    color: #17404e;
+    font-size: 12rem;
+    font-weight: 400;
+    letter-spacing: -0.063rem;
+    font-family: "p22-mackinac-pro", serif;
+
+  }
+
+  .hero-headline3 {
+    color: #17404e;
+    font-size: 2.7rem;
+  }
+  .project-body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .project-title{
+    font-size: 2rem;
+  }
+ 
+  .subheading {
+    font-family: "p22-mackinac-pro", serif;
+    font-size: 1.8rem;
+    color: #cf8652;
+    font-style: normal;
+    font-weight: 600;
   }
 }
