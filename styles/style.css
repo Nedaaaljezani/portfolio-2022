@@ -528,7 +528,17 @@ p {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
 }
-
+.about-quote{
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "p22-mackinac-pro", serif;
+  text-align: center;
+}
+.about-quote-container{
+  text-align: center;
+  padding: 4rem 8rem;
+  background-color: red;
+}
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
