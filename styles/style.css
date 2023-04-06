@@ -735,6 +735,8 @@ p {
                                   
 */
 
+
+
 .float-right {float: right;}
 .blog-post {
   margin-left: auto;
@@ -768,11 +770,11 @@ p {
   font-style: italic;
 }
 
+
+.single-blog-image-wrapper {border: 4px solid hotpink; padding: 1rem; display: flex; flex-direction: row; align-items: center; justify-content: center;}
 .blog-images {
   display: block;
   margin-bottom: 1rem;
-  align-items: center;
-  /* width: 50%; */
 }
 
 
