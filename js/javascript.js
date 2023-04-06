@@ -12,6 +12,6 @@ window.addEventListener("mousemove", function(e){
   const posX = e.clientX;
   const posy = e.clientY;
 
-  cursorDot.getElementsByClassName.left = `${posX}px`;
-
+  cursorDot.style.left = `${posX}px`;
+cursorDot.style.top = 
 })

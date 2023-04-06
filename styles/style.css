@@ -770,8 +770,8 @@ p {
 
 .blog-images {
   display: block;
-
   margin-bottom: 1rem;
+  align-items: center;
   /* width: 50%; */
 }
 
