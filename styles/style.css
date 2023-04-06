@@ -47,19 +47,19 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* cursor: none; */
+  
 }
-
-/* .cursor-dot{
+/*
+.cursor-dot{
 width: 5px;
 height: 5px;
-background-color: black;
+background-color: rgb(195, 18, 18);
 }
 
 .cursor-outline{
   width: 30px;
   height: 30px;
-  border: 2px solid hsla(0, 100%, 19%, 0.5)
+  border: 2px solid hsla(305, 98%, 50%, 0.5)
 }
 .cursor-dot,.cursor-outline{
   position: fixed;
@@ -283,7 +283,9 @@ a.alternate-hyperlink {
   color: var(--hyperlink-alternate-color);
 }
 
-a.blog-hyperlink {color: var(--hyperlink-alternate-color-blog);}
+a.blog-hyperlink {
+  color: var(--hyperlink-alternate-color-blog);
+}
 
 .custom-navigation:hover {
   background: url(assets/temp/heading-background.svg);
@@ -735,9 +737,6 @@ p {
                                   
 */
 
-
-
-.float-right {float: right;}
 .blog-post {
   margin-left: auto;
   margin-right: auto;
@@ -746,18 +745,27 @@ p {
   border: 10px solid blue;
 }
 
+.blog-title {
+  font-family: "p22-mackinac-pro", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #17404e
+}
+
 .blog-paragraph {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.3;
   margin-bottom: 1rem;
+  text-align: left;
+  font-family: "acumin-variable", sans-serif;
 
 }
 
 .blog-quote {
   text-align: center;
   font-family: "p22-mackinac-pro", serif;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
   color: #cf8652;
 }
 
@@ -770,11 +778,38 @@ p {
   font-style: italic;
 }
 
+.caption {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 500;
+  color:#d3ab52;
+  margin-top: .5rem;
+}
 
-.single-blog-image-wrapper {border: 4px solid hotpink; padding: 1rem; display: flex; flex-direction: row; align-items: center; justify-content: center;}
+.single-blog-image-wrapper {
+  border: 4px solid hotpink;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .blog-images {
   display: block;
   margin-bottom: 1rem;
+}
+.blog-image-label{
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-family: "p22-mackinac-pro", serif;
+  font-weight: 600;
+  color: #17404e;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 
@@ -824,7 +859,6 @@ p {
   background: black;
 }
 
-.experiments-page-wrapper {}
 
 .experiments-page-inner-container {
   text-align: center;
@@ -964,17 +998,61 @@ a.sub-navigation-link:hover {
     font-size: 2.5rem;
   }
 
-  .blog-paragraph {
+  .blog-title {
+    font-family: "p22-mackinac-pro", serif;
     font-size: 2rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-    padding-top: 3rem;
-    padding-right: 8rem;
-    padding-bottom: 3rem;
-    padding-left: 8rem;
-
-
+    text-align: center;
+    color: #17404e
   }
+  
+  .blog-paragraph {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-family: "acumin-variable", sans-serif;
+  
+  }
+  
+  .blog-quote {
+    text-align: center;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #cf8652;
+  }
+  
+  .cite {
+    text-align: left;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #cf8652;
+    font-style: italic;
+  }
+  
+  .caption {
+    text-align: center;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 500;
+    color:#d3ab52;
+    margin-top: .5rem;
+  }
+  
+  .blog-image-label{
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 600;
+    color: #17404e;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+  }
+  
+  
 
   .subheading {
     font-family: "p22-mackinac-pro", serif;
@@ -1036,11 +1114,6 @@ a.sub-navigation-link:hover {
     font-size: 1rem;
   }
 
-  .blog-paragraph {
-    font-size: 1.5rem;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-  }
 
   .project-title {
     font-size: 1.5rem;
@@ -1076,8 +1149,60 @@ a.sub-navigation-link:hover {
     font-size: 1.6rem;
   }
 
-
-
+  .blog-title {
+    font-family: "p22-mackinac-pro", serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #17404e
+  }
+  
+  .blog-paragraph {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-family: "acumin-variable", sans-serif;
+  
+  }
+  
+  .blog-quote {
+    text-align: center;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #cf8652;
+  }
+  
+  .cite {
+    text-align: left;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #cf8652;
+    font-style: italic;
+  }
+  
+  .caption {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 500;
+    color:#d3ab52;
+    margin-top: .5rem;
+  }
+  
+  .blog-image-label{
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 600;
+    color: #17404e;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+  }
+}
   /* Grayscale filter with full-colour on hover and tap */
   .work-page-grid-item a img {
     filter: grayscale(100);
@@ -1169,7 +1294,7 @@ a.sub-navigation-link:hover {
     width: 65%;
   }
 
-  .project-image {}
+
 
   .project-image-container {
     flex-direction: row;
@@ -1182,11 +1307,11 @@ a.sub-navigation-link:hover {
   .arrow {
     padding-right: 1rem;
   }
+
   .blog-post {
     width: 70%;
   }
 
-}
 
 
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
@@ -1235,12 +1360,6 @@ a.sub-navigation-link:hover {
     font-size: 2rem;
   }
 
-  .blog-paragraph {
-    font-size: 1.5rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-  }
-
   .project-title {
     font-size: 2rem;
   }
@@ -1251,6 +1370,59 @@ a.sub-navigation-link:hover {
     color: #cf8652;
     font-style: normal;
     font-weight: 600;
+  }
+  .blog-title {
+    font-family: "p22-mackinac-pro", serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #17404e
+  }
+  
+  .blog-paragraph {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-family: "acumin-variable", sans-serif;
+  
+  }
+  
+  .blog-quote {
+    text-align: center;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #cf8652;
+  }
+  
+  .cite {
+    text-align: left;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #cf8652;
+    font-style: italic;
+  }
+  
+  .caption {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 500;
+    color:#d3ab52;
+    margin-top: .5rem;
+  }
+  
+  .blog-image-label{
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 600;
+    color: #17404e;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
   }
 }
 
@@ -1339,12 +1511,7 @@ a.sub-navigation-link:hover {
     font-size: 2.7rem;
   }
 
-  .blog-paragraph {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-
-  }
+ 
 
   .project-title {
     font-size: 2rem;
@@ -1356,5 +1523,59 @@ a.sub-navigation-link:hover {
     color: #cf8652;
     font-style: normal;
     font-weight: 600;
+  }
+  .blog-title {
+    font-family: "p22-mackinac-pro", serif;
+    font-size: 5rem;
+    text-align: center;
+    color: #17404e;
+    line-height: 1.4;
+  }
+  
+  .blog-paragraph {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-family: "acumin-variable", sans-serif;
+  
+  }
+  
+  .blog-quote {
+    text-align: center;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #cf8652;
+  }
+  
+  .cite {
+    text-align: left;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #cf8652;
+    font-style: italic;
+  }
+  
+  .caption {
+    text-align: center;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 500;
+    color:#d3ab52;
+    margin-top: .5rem;
+  }
+  
+  .blog-image-label{
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-family: "p22-mackinac-pro", serif;
+    font-weight: 600;
+    color: #17404e;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
   }
 }
