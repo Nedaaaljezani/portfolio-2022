@@ -89,7 +89,7 @@ background-color: rgb(195, 18, 18);
 :root {
   --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #fdf0d5F;
+  --accent-color: #fdf0d5;
   --overlay-color: #cf8652;
   --hyperlink-color: #17404e;
   --hyperlink-alternate-color: #f1f1f1;
@@ -565,21 +565,25 @@ p {
 .footer-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  background: red;
 }
 
 .footer-item-2 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  background: blue;
 }
 
 .footer-item-3 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  background: green;
 }
 
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  background: yellow;
 }
 
 .awards-list {
@@ -1202,7 +1206,7 @@ a.sub-navigation-link:hover {
     margin-top: 1.7rem;
     margin-bottom: 1.7rem;
   }
-}
+
   /* Grayscale filter with full-colour on hover and tap */
   .work-page-grid-item a img {
     filter: grayscale(100);
@@ -1312,7 +1316,7 @@ a.sub-navigation-link:hover {
     width: 70%;
   }
 
-
+}
 
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
 
